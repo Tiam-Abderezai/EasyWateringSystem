@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Spinner xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.HomepageActivity"
+    android:id="@+id/id_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:hint="@string/zone_number"
+    android:background="@color/colorSuperLightGrey"
+    android:elevation="@dimen/elevation_edit_text"
+    android:textStyle="bold"
+    android:drawSelectorOnTop="true"
+    android:contentDescription="@string/contentDesc_system_spinner"/>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_system"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyDark"
+    tools:context=".activities.SystemActivity">
+
+
+    <TextView
+        android:id="@+id/title_system"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorGreyDark"
+        android:elevation="@dimen/elevation_edit_text"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/systems_all_caps"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/system_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_system">
+
+        <Button
+            android:id="@+id/edit_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_round_small"
+            android:contentDescription="@string/contentDesc_system_edit"
+            android:elevation="@dimen/elevation_edit_text"
+            android:hint="@string/system_edit"
+            android:onClick="saveSystemEdit"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="@dimen/elevation_edit_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/delete_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_round_small"
+            android:contentDescription="@string/contentDesc_sytem_delete"
+            android:elevation="@dimen/elevation_edit_text"
+            android:hint="@string/system_delete"
+            android:onClick="deleteSystem"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="@dimen/elevation_edit_text"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_reset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyDark"
+    tools:context=".activities.SystemListActivity">
+
+
+    <TextView
+        android:id="@+id/title_systems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorGreyDark"
+        android:elevation="@dimen/elevation_edit_text"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="SYSTEMS"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:contentDescription="@string/contentDesc_system_title"/>
+
+    <Button
+        android:id="@+id/add_system"
+        android:layout_below="@id/title_systems"
+        android:onClick="addNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="256dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/button_round_small"
+        android:elevation="@dimen/elevation_button"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/system_add_new"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+android:contentDescription="@string/contentDesc_system_add"
+        />
+
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:layout_below="@+id/add_system"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"/>
+
+
+</RelativeLayout>

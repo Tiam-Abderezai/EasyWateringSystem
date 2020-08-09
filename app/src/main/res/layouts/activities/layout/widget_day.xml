@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09C"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_widget_day_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="32dp"
+        android:background="#09C"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:contentDescription="@string/contentDesc_widget_day_title"
+        />
+
+    <TextView
+        android:id="@+id/tv_widget_schedules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#09C"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:contentDescription="@string/contentDesc_schedule_widget"
+        />
+
+</LinearLayout>

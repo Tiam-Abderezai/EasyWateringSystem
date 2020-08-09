@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/system_crud_button"
+    tools:context=".activities.HomepageActivity"
+    android:onClick="crudSystem"
+    android:layout_width="256dp"
+    android:layout_height="32dp"
+    android:background="@color/colorLightGrey"
+    android:text="@string/systems"
+    android:contentDescription="@string/contentDesc_system_crud_button"
+/>

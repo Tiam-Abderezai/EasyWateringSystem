@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_zone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyDark"
+    tools:context=".activities.ZoneActivity">
+
+    <TextView
+        android:id="@+id/zone_number_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorGreyDark"
+        android:elevation="@dimen/elevation_edit_text"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/zone_1"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:contentDescription="@string/contentDesc_zone_number"/>
+
+    <TextView
+        android:id="@+id/zone_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zone_number_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorGreyDark"
+        android:elevation="@dimen/elevation_edit_text"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/front_yard"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:contentDescription="@string/contentDesc_zone_name"/>
+
+
+
+    <ProgressBar
+        android:id="@+id/zone_timer_pbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zone_name_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorGreyDark"
+        android:elevation="@dimen/elevation_edit_text"
+        android:gravity="center_horizontal"
+        android:max="100"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:progress="0"
+        android:text="@string/timer"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:contentDescription="@string/contentDesc_zone_timer_progressbar"/>
+
+    <Button
+        android:id="@+id/zone_run_now_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zone_timer_pbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorSuperLightGrey"
+        android:elevation="@dimen/elevation_edit_text"
+        android:gravity="center_horizontal"
+        android:hint="@string/run"
+        android:onClick="runTimer"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textAlignment="center"
+        android:textSize="@dimen/elevation_edit_text"
+        android:textStyle="bold"
+        android:contentDescription="@string/contentDesc_zone_run_timer_now"/>
+
+    <RelativeLayout
+        android:id="@+id/zone_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zone_run_now_bt">
+
+        <Button
+            android:id="@+id/zone_edit_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_round_small"
+            android:elevation="@dimen/elevation_edit_text"
+            android:hint="@string/zone_edit"
+            android:onClick="editZone"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="@dimen/elevation_edit_text"
+            android:textStyle="bold"
+            android:contentDescription="@string/contentDesc_zone_edit_button"/>
+
+        <Button
+            android:id="@+id/zone_delete_new_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_round_small"
+            android:elevation="@dimen/elevation_edit_text"
+            android:hint="@string/zone_delete"
+            android:onClick="deleteZone"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:contentDescription="@string/contentDesc_zone_delete_button"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/zone_image"
+        android:layout_below="@id/zone_run_now_bt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/contentDesc_zone_image" />
+
+</RelativeLayout>
